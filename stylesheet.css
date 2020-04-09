@@ -112,14 +112,61 @@ img { display: block; }
 #chickens-c-06 { grid-column: 2; grid-row: 41; }
 #chickens-c-07 { grid-column: 3; grid-row: 41; }
 
-#chickens-h-01 { grid-column: 7; grid-row: 39; }
-#chickens-h-02 { grid-column: 7; grid-row: 40; }
-#chickens-h-03 { grid-column: 7; grid-row: 41; }
-#chickens-h-04 { grid-column: 7; grid-row: 42; }
-#chickens-h-05 { grid-column: 7; grid-row: 43; }
-#chickens-h-06 { grid-column: 8; grid-row: 41; }
-#chickens-h-07 { grid-column: 9; grid-row: 39; }
-#chickens-h-08 { grid-column: 9; grid-row: 40; }
-#chickens-h-09 { grid-column: 9; grid-row: 41; }
-#chickens-h-10 { grid-column: 9; grid-row: 42; }
-#chickens-h-11 { grid-column: 9; grid-row: 43; }
+#chickens-h-01 { grid-column: 7; grid-row: 43; }
+#chickens-h-02 { grid-column: 7; grid-row: 44; }
+#chickens-h-03 { grid-column: 7; grid-row: 45; }
+#chickens-h-04 { grid-column: 7; grid-row: 46; }
+#chickens-h-05 { grid-column: 7; grid-row: 47; }
+#chickens-h-06 { grid-column: 8; grid-row: 45; }
+#chickens-h-07 { grid-column: 9; grid-row: 43; }
+#chickens-h-08 { grid-column: 9; grid-row: 44; }
+#chickens-h-09 { grid-column: 9; grid-row: 45; }
+#chickens-h-10 { grid-column: 9; grid-row: 46; }
+#chickens-h-11 { grid-column: 9; grid-row: 47; }
+
+#chickens-i-01 { grid-column: 14; grid-row: 49; }
+#chickens-i-02 { grid-column: 14; grid-row: 50; }
+#chickens-i-03 { grid-column: 14; grid-row: 51; }
+#chickens-i-04 { grid-column: 14; grid-row: 52; }
+#chickens-i-05 { grid-column: 14; grid-row: 53; }
+
+#chickens-c2-01 { grid-column: 2; grid-row: 46; }
+#chickens-c2-02 { grid-column: 3; grid-row: 46; }
+#chickens-c2-03 { grid-column: 1; grid-row: 47; }
+#chickens-c2-04 { grid-column: 1; grid-row: 48; }
+#chickens-c2-05 { grid-column: 1; grid-row: 49; }
+#chickens-c2-06 { grid-column: 2; grid-row: 50; }
+#chickens-c2-07 { grid-column: 3; grid-row: 50; }
+
+#chickens-k-01 { grid-column: 7; grid-row: 52; }
+#chickens-k-02 { grid-column: 7; grid-row: 53; }
+#chickens-k-03 { grid-column: 7; grid-row: 54; }
+#chickens-k-04 { grid-column: 7; grid-row: 55; }
+#chickens-k-05 { grid-column: 7; grid-row: 56; }
+#chickens-k-06 { grid-column: 8; grid-row: 54; }
+#chickens-k-07 { grid-column: 9; grid-row: 52; }
+#chickens-k-08 { grid-column: 9; grid-row: 53; }
+#chickens-k-09 { grid-column: 9; grid-row: 55; }
+#chickens-k-10 { grid-column: 9; grid-row: 56; }
+
+#chickens-e-01 { grid-column: 13; grid-row: 58; }
+#chickens-e-02 { grid-column: 13; grid-row: 59; }
+#chickens-e-03 { grid-column: 13; grid-row: 60; }
+#chickens-e-04 { grid-column: 13; grid-row: 61; }
+#chickens-e-05 { grid-column: 13; grid-row: 62; }
+#chickens-e-06 { grid-column: 14; grid-row: 58; }
+#chickens-e-07 { grid-column: 14; grid-row: 60; }
+#chickens-e-08 { grid-column: 14; grid-row: 62; }
+#chickens-e-09 { grid-column: 15; grid-row: 58; }
+#chickens-e-10 { grid-column: 15; grid-row: 62; }
+
+#chickens-n-01 { grid-column: 1; grid-row: 58; }
+#chickens-n-02 { grid-column: 1; grid-row: 59; }
+#chickens-n-03 { grid-column: 1; grid-row: 60; }
+#chickens-n-04 { grid-column: 1; grid-row: 61; }
+#chickens-n-05 { grid-column: 1; grid-row: 62; }
+#chickens-n-06 { grid-column: 2; grid-row: 58; }
+#chickens-n-07 { grid-column: 3; grid-row: 60; }
+#chickens-n-08 { grid-column: 3; grid-row: 62; }
+#chickens-n-09 { grid-column: 3; grid-row: 62; }
+#chickens-n-19 { grid-column: 3; grid-row: 62; }
