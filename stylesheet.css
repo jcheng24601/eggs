@@ -2,6 +2,7 @@ body {
 	background-image: url("img/trimmed-grass.gif");
 	background-repeat: repeat;
 	height: 5000px;
+	font-family: 'Press Start 2P', monospace;
 }
 
 .container {
