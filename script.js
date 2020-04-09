@@ -8,7 +8,7 @@ function revealEgg() {
 		count += 1;
 		counter.innerHTML = count;
 	}
-	if (count == 3) {
+	if (count == 132) {
 		victory.innerHTML = "Congrats! You've found all the eggs!";
 	}
 }
