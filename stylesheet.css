@@ -1,16 +1,125 @@
 body {
-	display: flex;
-	justify-content: center;
 	background-image: url("img/trimmed-grass.gif");
 	background-repeat: repeat;
 	height: 5000px;
 }
 
-.container { width: 800px; }
-.message { height: 120px; }
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
+.message { 
+	margin-top: 30px;
+	height: 120px; 
+}
 h1, p { text-align: center; }
 
-.hidden { opacity: 0; }
+.field {
+	display: grid;
+	grid-template-columns: repeat(15, 32px);
+	grid-template-rows: repeat(95, 33px);
+}
+
+img { display: block; }
+.hidden { opacity: 100; }
 .unhidden { opacity: 100; }
 .ugly { border: 1px solid pink; }
+
+
+/*** Positioning Craziness ***/
+
+/*** Charles ***/
+#charles-c-01 { grid-column: 2; grid-row: 1; }
+#charles-c-02 { grid-column: 3; grid-row: 1; }
+#charles-c-03 { grid-column: 1; grid-row: 2; }
+#charles-c-04 { grid-column: 1; grid-row: 3; }
+#charles-c-05 { grid-column: 1; grid-row: 4; }
+#charles-c-06 { grid-column: 2; grid-row: 5; }
+#charles-c-07 { grid-column: 3; grid-row: 5; }
+
+#charles-h-01 { grid-column: 7; grid-row: 7; }
+#charles-h-02 { grid-column: 7; grid-row: 8; }
+#charles-h-03 { grid-column: 7; grid-row: 9; }
+#charles-h-04 { grid-column: 7; grid-row: 10; }
+#charles-h-05 { grid-column: 7; grid-row: 11; }
+#charles-h-06 { grid-column: 8; grid-row: 9; }
+#charles-h-07 { grid-column: 9; grid-row: 7; }
+#charles-h-08 { grid-column: 9; grid-row: 8; }
+#charles-h-09 { grid-column: 9; grid-row: 9; }
+#charles-h-10 { grid-column: 9; grid-row: 10; }
+#charles-h-11 { grid-column: 9; grid-row: 11; }
+
+#charles-a-01 { grid-column: 13; grid-row: 13; }
+#charles-a-02 { grid-column: 13; grid-row: 14; }
+#charles-a-03 { grid-column: 13; grid-row: 15; }
+#charles-a-04 { grid-column: 13; grid-row: 16; }
+#charles-a-05 { grid-column: 13; grid-row: 17; }
+#charles-a-06 { grid-column: 14; grid-row: 13; }
+#charles-a-07 { grid-column: 14; grid-row: 15; }
+#charles-a-08 { grid-column: 15; grid-row: 13; }
+#charles-a-09 { grid-column: 15; grid-row: 14; }
+#charles-a-10 { grid-column: 15; grid-row: 15; }
+#charles-a-11 { grid-column: 15; grid-row: 16; }
+#charles-a-12 { grid-column: 15; grid-row: 17; }
+
+#charles-r-01 { grid-column: 1; grid-row: 10; }
+#charles-r-02 { grid-column: 1; grid-row: 11; }
+#charles-r-03 { grid-column: 1; grid-row: 12; }
+#charles-r-04 { grid-column: 1; grid-row: 13; }
+#charles-r-05 { grid-column: 1; grid-row: 14; }
+#charles-r-06 { grid-column: 2; grid-row: 12; }
+#charles-r-07 { grid-column: 3; grid-row: 10; }
+#charles-r-08 { grid-column: 3; grid-row: 11; }
+#charles-r-09 { grid-column: 2; grid-row: 10; }
+#charles-r-10 { grid-column: 3; grid-row: 13; }
+#charles-r-11 { grid-column: 3; grid-row: 14; }
+
+#charles-l-01 { grid-column: 7; grid-row: 16; }
+#charles-l-02 { grid-column: 7; grid-row: 17; }
+#charles-l-03 { grid-column: 7; grid-row: 18; }
+#charles-l-04 { grid-column: 7; grid-row: 19; }
+#charles-l-05 { grid-column: 7; grid-row: 20; }
+#charles-l-06 { grid-column: 8; grid-row: 20; }
+#charles-l-07 { grid-column: 9; grid-row: 20; }
+
+#charles-e-01 { grid-column: 13; grid-row: 22; }
+#charles-e-02 { grid-column: 13; grid-row: 23; }
+#charles-e-03 { grid-column: 13; grid-row: 24; }
+#charles-e-04 { grid-column: 13; grid-row: 25; }
+#charles-e-05 { grid-column: 13; grid-row: 26; }
+#charles-e-06 { grid-column: 14; grid-row: 22; }
+#charles-e-07 { grid-column: 14; grid-row: 24; }
+#charles-e-08 { grid-column: 14; grid-row: 26; }
+#charles-e-09 { grid-column: 15; grid-row: 22; }
+#charles-e-10 { grid-column: 15; grid-row: 26; }
+
+#charles-s-01 { grid-column: 9; grid-row: 28; }
+#charles-s-02 { grid-column: 8; grid-row: 28; }
+#charles-s-03 { grid-column: 7; grid-row: 29; }
+#charles-s-04 { grid-column: 8; grid-row: 30; }
+#charles-s-05 { grid-column: 9; grid-row: 31; }
+#charles-s-06 { grid-column: 7; grid-row: 32; }
+#charles-s-07 { grid-column: 8; grid-row: 32; }
+
+/*** Chickens ***/
+#chickens-c-01 { grid-column: 2; grid-row: 37; }
+#chickens-c-02 { grid-column: 3; grid-row: 37; }
+#chickens-c-03 { grid-column: 1; grid-row: 38; }
+#chickens-c-04 { grid-column: 1; grid-row: 39; }
+#chickens-c-05 { grid-column: 1; grid-row: 40; }
+#chickens-c-06 { grid-column: 2; grid-row: 41; }
+#chickens-c-07 { grid-column: 3; grid-row: 41; }
+
+#chickens-h-01 { grid-column: 7; grid-row: 39; }
+#chickens-h-02 { grid-column: 7; grid-row: 40; }
+#chickens-h-03 { grid-column: 7; grid-row: 41; }
+#chickens-h-04 { grid-column: 7; grid-row: 42; }
+#chickens-h-05 { grid-column: 7; grid-row: 43; }
+#chickens-h-06 { grid-column: 8; grid-row: 41; }
+#chickens-h-07 { grid-column: 9; grid-row: 39; }
+#chickens-h-08 { grid-column: 9; grid-row: 40; }
+#chickens-h-09 { grid-column: 9; grid-row: 41; }
+#chickens-h-10 { grid-column: 9; grid-row: 42; }
+#chickens-h-11 { grid-column: 9; grid-row: 43; }
