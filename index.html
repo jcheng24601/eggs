@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Easter Egg Hunt!</title>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="message">
+				<h1>Egg count: <span class="counter">0</span></h1>
+				<p class="victory"></p>
+			</div>
+		  	<div class="field">
+		  		<img class="egg hidden" src="img/abra.png"/>
+				<img class="egg hidden" src="img/aerodactyl.png"/>
+				<img class="egg hidden" src="img/bellsprout.png"/>
+				<img class="egg hidden" src="img/bulbasaur.png"/>
+				<img class="egg hidden" src="img/caterpie.png"/>
+				<img class="egg hidden" src="img/chansey.png"/>
+				<img class="egg hidden" src="img/charmander.png"/>
+				<img class="egg hidden" src="img/clefairy.png"/>
+				<img class="egg hidden" src="img/cubone.png"/>
+				<img class="egg hidden" src="img/diglet.png"/>
+				<img class="egg hidden" src="img/ditto.png"/>
+				<img class="egg hidden" src="img/doduo.png"/>
+				<img class="egg hidden" src="img/dratini.png"/>
+				<img class="egg hidden" src="img/drowzee.png"/>
+				<img class="egg hidden" src="img/eevee.png"/>
+				<img class="egg hidden" src="img/ekans.png"/>
+				<img class="egg hidden" src="img/exeggcute.png"/>
+				<img class="egg hidden" src="img/farfetchd.png"/>
+				<img class="egg hidden" src="img/gastly.png"/>
+				<img class="egg hidden" src="img/geodude.png"/>
+				<img class="egg hidden" src="img/goldeen.png"/>
+				<img class="egg hidden" src="img/grimer.png"/>
+				<img class="egg hidden" src="img/growlithe.png"/>
+				<img class="egg hidden" src="img/hitmonchan.png"/>
+				<img class="egg hidden" src="img/horsea.png"/>
+				<img class="egg hidden" src="img/jigglypuff.png"/>
+				<img class="egg hidden" src="img/jynx.png"/>
+				<img class="egg hidden" src="img/kabuto.png"/>
+				<img class="egg hidden" src="img/kangaskhan.png"/>
+				<img class="egg hidden" src="img/koffing.png"/>
+				<img class="egg hidden" src="img/krabby.png"/>
+				<img class="egg hidden" src="img/lapras.png"/>
+				<img class="egg hidden" src="img/lickitung.png"/>
+				<img class="egg hidden" src="img/machop.png"/>
+				<img class="egg hidden" src="img/magmar.png"/>
+				<img class="egg hidden" src="img/magnemite.png"/>
+				<img class="egg hidden" src="img/mankey.png"/>
+				<img class="egg hidden" src="img/meowth.png"/>
+				<img class="egg hidden" src="img/mrmime.png"/>
+				<img class="egg hidden" src="img/nidoran.png"/>
+				<img class="egg hidden" src="img/oddish.png"/>
+				<img class="egg hidden" src="img/omanyte.png"/>
+				<img class="egg hidden" src="img/onix.png"/>
+				<img class="egg hidden" src="img/paras.png"/>
+				<img class="egg hidden" src="img/pidgey.png"/>
+				<img class="egg hidden" src="img/pikachu.png"/>
+				<img class="egg hidden" src="img/pinsir.png"/>
+				<img class="egg hidden" src="img/polywag.png"/>
+				<img class="egg hidden" src="img/ponyta.png"/>
+				<img class="egg hidden" src="img/porygon.png"/>
+				<img class="egg hidden" src="img/psyduck.png"/>
+				<img class="egg hidden" src="img/ratata.png"/>
+				<img class="egg hidden" src="img/rhyhorn.png"/>
+				<img class="egg hidden" src="img/sandshrew.png"/>
+				<img class="egg hidden" src="img/scyther.png"/>
+				<img class="egg hidden" src="img/seel.png"/>
+				<img class="egg hidden" src="img/shellder.png"/>
+				<img class="egg hidden" src="img/slowpoke.png"/>
+				<img class="egg hidden" src="img/snorlax.png"/>
+				<img class="egg hidden" src="img/spearow.png"/>
+				<img class="egg hidden" src="img/squirtle.png"/>
+				<img class="egg hidden" src="img/staryu.png"/>
+				<img class="egg hidden" src="img/tauros.png"/>
+				<img class="egg hidden" src="img/tentacool.png"/>
+				<img class="egg hidden" src="img/venonat.png"/>
+				<img class="egg hidden" src="img/voltorb.png"/>
+				<img class="egg hidden" src="img/vulpix.png"/>
+				<img class="egg hidden" src="img/weevil.png"/>
+				<img class="egg hidden" src="img/zubat.png"/>
+		  	</div>
+		</div>
+	<script type="text/javascript">
+		const eggs = document.querySelectorAll(".egg");
+		var victory = document.querySelector(".victory");
+		var counter = document.querySelector(".counter");
+		var count = 0;
+		function revealEgg() {
+			if (this.classList.contains("hidden")) {
+				this.classList.remove("hidden");
+				count += 1;
+				counter.innerHTML = count;
+			}
+			if (count == 3) {
+				victory.innerHTML = "Congrats! You've found all the eggs!";
+			}
+		}
+		function listenEgg(thing) {
+			thing.addEventListener("click", revealEgg);
+		}
+		eggs.forEach(listenEgg);
+	</script> 
+	</body>
+</html>

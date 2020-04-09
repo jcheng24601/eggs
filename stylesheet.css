@@ -1,0 +1,16 @@
+body {
+	display: flex;
+	justify-content: center;
+	background-image: url("img/trimmed-grass.gif");
+	background-repeat: repeat;
+	height: 5000px;
+}
+
+.container { width: 800px; }
+.message { height: 120px; }
+
+h1, p { text-align: center; }
+
+.hidden { opacity: 0; }
+.unhidden { opacity: 100; }
+.ugly { border: 1px solid pink; }
