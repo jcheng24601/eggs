@@ -3,6 +3,7 @@ body {
 	background-repeat: repeat;
 	height: 5000px;
 	font-family: 'Press Start 2P', monospace;
+	cursor: url(img/shovel.png) 5 32, auto;
 }
 
 .container {
