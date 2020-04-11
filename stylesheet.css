@@ -1,7 +1,8 @@
+* { border: none; margin: 0; padding: 0; }
+
 body {
 	background-image: url("img/trimmed-grass.gif");
 	background-repeat: repeat;
-	height: 5000px;
 	font-family: 'Press Start 2P', monospace;
 	cursor: url(img/shovel.png) 5 32, auto;
 }
@@ -10,13 +11,24 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: 5000px;
 }
 
-.message { 
-	margin-top: 30px;
-	height: 120px; 
+.header { 
+	position: sticky;
+	display: grid;
+	top: 30px;
+	width: 800px;
+	margin: 30px 0;
+	padding: 30px;
+	border: 3px double #000;
+	border-radius: 10px;
+	background-color: #fafaf7;
 }
-h1, p { text-align: center; }
+
+h2 { margin-bottom: 20px; text-align: center; }
+p { text-align: center; }
+p.victory { padding-top: 15px; }
 
 .field {
 	display: grid;
