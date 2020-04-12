@@ -1,7 +1,7 @@
 * { border: none; margin: 0; padding: 0; }
 
 body {
-	background-image: url("img/trimmed-grass.gif");
+	background-image: url("img/tree.gif");
 	background-repeat: repeat;
 	font-family: 'Press Start 2P', monospace;
 	cursor: url(img/shovel.png) 5 32, auto;
@@ -11,7 +11,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 5000px;
+	height: 3500px;
 }
 
 .header { 
@@ -31,6 +31,8 @@ p { text-align: center; }
 #victory { padding-top: 15px; }
 
 .field {
+	background-image: url("img/trimmed-grass.gif");
+	background-repeat: repeat;
 	display: grid;
 	grid-template-columns: repeat(15, 32px);
 	grid-template-rows: repeat(95, 33px);
