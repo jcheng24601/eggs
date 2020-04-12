@@ -69,7 +69,7 @@ function scrollFunction() {
   }
 }
 
-const debounce = (callback, delay = 100) => {
+const debounce = (callback, delay = 50) => {
   let timeoutId
   return (...args) => {
     clearTimeout(timeoutId)
