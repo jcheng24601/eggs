@@ -76,7 +76,7 @@ td:last-child, th:last-child { width: 60%; }
 }
 
 img { display: block; }
-.hidden { opacity: 100; }
+.hidden { opacity: 0; }
 .unhidden { opacity: 100; }
 
 .red {
