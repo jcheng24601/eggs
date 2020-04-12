@@ -91,6 +91,7 @@ td:last-child, th:last-child { width: 60%; }
 	display: grid;
 	grid-template-columns: repeat(32, 32px);
 	grid-template-rows: repeat(80, 33px);
+	border-radius: 10px;
 }
 
 img { display: block; }
