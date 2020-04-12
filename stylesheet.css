@@ -11,7 +11,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 3500px;
+	height: 3100px;
 }
 
 .header { 
@@ -34,8 +34,8 @@ p { text-align: center; }
 	background-image: url("img/trimmed-grass.gif");
 	background-repeat: repeat;
 	display: grid;
-	grid-template-columns: repeat(15, 32px);
-	grid-template-rows: repeat(95, 33px);
+	grid-template-columns: repeat(32, 32px);
+	grid-template-rows: repeat(80, 33px);
 }
 
 img { display: block; }
@@ -49,37 +49,37 @@ img { display: block; }
 /*** Positioning Craziness ***/
 
 .field {
-	--charles-c-col: 1;
-	--charles-c-row: 1;
-	--charles-h-col: 7;
-	--charles-h-row: 7;
-	--charles-a-col: 13;
-	--charles-a-row: 13;
-	--charles-r-col: 1;
-	--charles-r-row: 10;
-	--charles-l-col: 7;
-	--charles-l-row: 16;
-	--charles-e-col: 13;
-	--charles-e-row: 22;
-	--charles-s-col: 7;
-	--charles-s-row: 28;
+	--charles-c-col: 9;
+	--charles-c-row: 6;
+	--charles-h-col: 15;
+	--charles-h-row: 12;
+	--charles-a-col: 21;
+	--charles-a-row: 18;
+	--charles-r-col: 4;
+	--charles-r-row: 15;
+	--charles-l-col: 11;
+	--charles-l-row: 21;
+	--charles-e-col: 18;
+	--charles-e-row: 27;
+	--charles-s-col: 25;
+	--charles-s-row: 33;
 
-	--chickens-c-col: 1;
-	--chickens-c-row: 37;
-	--chickens-h-col: 7;
-	--chickens-h-row: 43;
-	--chickens-i-col: 14;
-	--chickens-i-row: 49;
-	--chickens-c2-col: 1;
-	--chickens-c2-row: 46;
-	--chickens-k-col: 7;
-	--chickens-k-row: 52;
-	--chickens-e-col: 13;
-	--chickens-e-row: 58;
-	--chickens-n-col: 1;
-	--chickens-n-row: 58;
-	--chickens-s-col: 7;
-	--chickens-s-row: 64;
+	--chickens-c-col: 9;
+	--chickens-c-row: 42;
+	--chickens-h-col: 15;
+	--chickens-h-row: 48;
+	--chickens-i-col: 22;
+	--chickens-i-row: 54;
+	--chickens-c2-col: 28;
+	--chickens-c2-row: 59;
+	--chickens-k-col: 4;
+	--chickens-k-row: 57;
+	--chickens-e-col: 11;
+	--chickens-e-row: 63;
+	--chickens-n-col: 18;
+	--chickens-n-row: 69;
+	--chickens-s-col: 25;
+	--chickens-s-row: 74;
 }
 
 /*** Charles ***/
