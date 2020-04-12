@@ -34,11 +34,15 @@ function tick() {
 }
 
 function main() {
-    const eggs = document.querySelectorAll(".egg")
+    const container = document.querySelector(".container");
+    container.addEventListener("mousedown", function() { this.classList.add("shovel-up"); });
+    container.addEventListener("mouseup", function() { this.classList.remove("shovel-up"); });
+
+    const eggs = document.querySelectorAll(".egg");
     eggs.forEach(egg => egg.addEventListener("click", revealEgg));
 
     timer_selector.innerHTML = time_remaining;
     timer = setInterval(tick, 1000);
 }
 
-main()
+main();

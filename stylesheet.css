@@ -4,7 +4,6 @@ body {
 	background-image: url("img/tree.gif");
 	background-repeat: repeat;
 	font-family: 'Press Start 2P', monospace;
-	cursor: url(img/shovel.png) 5 32, auto;
 }
 
 .container {
@@ -12,6 +11,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	height: 3100px;
+	cursor: url(img/shovel.png) 5 32, auto;
 }
 
 .header { 
@@ -44,6 +44,10 @@ img { display: block; }
 
 .red {
 	color: red;
+}
+
+.shovel-up {
+	cursor: url(img/shovel_2.png) 5 32, auto;
 }
 
 /*** Positioning Craziness ***/
