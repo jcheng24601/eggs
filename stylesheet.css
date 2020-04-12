@@ -142,6 +142,12 @@ img { display: block; }
 	--chickens-s-row: 74;
 }
 
+/*** Helpers ***/
+#lake { grid-column: 18; grid-row: 2; }
+#pool { grid-column: 1; grid-row: 25; }
+#waterfall { grid-column: 17; grid-row: 40; }
+#mountains { grid-column: 2; grid-row: 73; }
+
 /*** Charles ***/
 #charles-c-01 { grid-column: calc(var(--charles-c-col) + 1); grid-row: calc(var(--charles-c-row) + 0); }
 #charles-c-02 { grid-column: calc(var(--charles-c-col) + 2); grid-row: calc(var(--charles-c-row) + 0); }
