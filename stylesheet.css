@@ -59,7 +59,7 @@ td:last-child, th:last-child { width: 60%; }
 }
 
 img { display: block; }
-.hidden { opacity: 0; }
+.hidden { opacity: 100; }
 .unhidden { opacity: 100; }
 
 .red {
@@ -220,10 +220,10 @@ img { display: block; }
 #chickens-k-04 { grid-column: calc(var(--chickens-k-col) + 0); grid-row: calc(var(--chickens-k-row) + 3); }
 #chickens-k-05 { grid-column: calc(var(--chickens-k-col) + 0); grid-row: calc(var(--chickens-k-row) + 4); }
 #chickens-k-06 { grid-column: calc(var(--chickens-k-col) + 1); grid-row: calc(var(--chickens-k-row) + 2); }
-#chickens-k-07 { grid-column: calc(var(--chickens-k-col) + 2); grid-row: calc(var(--chickens-k-row) + 0); }
+#chickens-k-07 { grid-column: calc(var(--chickens-k-col) + 3); grid-row: calc(var(--chickens-k-row) + 0); }
 #chickens-k-08 { grid-column: calc(var(--chickens-k-col) + 2); grid-row: calc(var(--chickens-k-row) + 1); }
 #chickens-k-09 { grid-column: calc(var(--chickens-k-col) + 2); grid-row: calc(var(--chickens-k-row) + 3); }
-#chickens-k-10 { grid-column: calc(var(--chickens-k-col) + 2); grid-row: calc(var(--chickens-k-row) + 4); }
+#chickens-k-10 { grid-column: calc(var(--chickens-k-col) + 3); grid-row: calc(var(--chickens-k-row) + 4); }
 
 #chickens-e-01 { grid-column: calc(var(--chickens-e-col) + 0); grid-row: calc(var(--chickens-e-row) + 0); }
 #chickens-e-02 { grid-column: calc(var(--chickens-e-col) + 0); grid-row: calc(var(--chickens-e-row) + 1); }
@@ -242,10 +242,13 @@ img { display: block; }
 #chickens-n-04 { grid-column: calc(var(--chickens-n-col) + 0); grid-row: calc(var(--chickens-n-row) + 3); }
 #chickens-n-05 { grid-column: calc(var(--chickens-n-col) + 0); grid-row: calc(var(--chickens-n-row) + 4); }
 #chickens-n-06 { grid-column: calc(var(--chickens-n-col) + 1); grid-row: calc(var(--chickens-n-row) + 1); }
-#chickens-n-07 { grid-column: calc(var(--chickens-n-col) + 2); grid-row: calc(var(--chickens-n-row) + 1); }
-#chickens-n-08 { grid-column: calc(var(--chickens-n-col) + 2); grid-row: calc(var(--chickens-n-row) + 2); }
-#chickens-n-09 { grid-column: calc(var(--chickens-n-col) + 2); grid-row: calc(var(--chickens-n-row) + 3); }
-#chickens-n-10 { grid-column: calc(var(--chickens-n-col) + 2); grid-row: calc(var(--chickens-n-row) + 4); }
+#chickens-n-07 { grid-column: calc(var(--chickens-n-col) + 4); grid-row: calc(var(--chickens-n-row) + 1); }
+#chickens-n-08 { grid-column: calc(var(--chickens-n-col) + 4); grid-row: calc(var(--chickens-n-row) + 2); }
+#chickens-n-09 { grid-column: calc(var(--chickens-n-col) + 4); grid-row: calc(var(--chickens-n-row) + 3); }
+#chickens-n-10 { grid-column: calc(var(--chickens-n-col) + 4); grid-row: calc(var(--chickens-n-row) + 4); }
+#chickens-n-11 { grid-column: calc(var(--chickens-n-col) + 4); grid-row: calc(var(--chickens-n-row) + 0); }
+#chickens-n-12 { grid-column: calc(var(--chickens-n-col) + 2); grid-row: calc(var(--chickens-n-row) + 2); }
+#chickens-n-13 { grid-column: calc(var(--chickens-n-col) + 3); grid-row: calc(var(--chickens-n-row) + 3); }
 
 #chickens-s-01 { grid-column: calc(var(--chickens-s-col) + 2); grid-row: calc(var(--chickens-s-row) + 0); }
 #chickens-s-02 { grid-column: calc(var(--chickens-s-col) + 1); grid-row: calc(var(--chickens-s-row) + 0); }
