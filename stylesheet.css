@@ -58,7 +58,7 @@ td:last-child, th:last-child { width: 60%; }
 }
 
 img { display: block; }
-.hidden { opacity: 0; }
+.hidden { opacity: 100; }
 .unhidden { opacity: 100; }
 
 .red {
