@@ -38,6 +38,12 @@ button {
 	background-color: #ffd712;
 	font-family: 'Press Start 2P', monospace;
 	font-size: 18pt;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #fff1a8;
+	transition: background-color, .1s;
 }
 
 .smaller-header {
