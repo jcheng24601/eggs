@@ -4,8 +4,8 @@ let time_remaining = 300;
 let timer = null;
 
 // Selectors.
-const counter_selector = document.querySelector(".counter");
-const timer_selector = document.querySelector(".timer");
+const counter_selector = document.querySelector("#counter span");
+const timer_selector = document.querySelector("#timer span");
 
 function revealEgg() {
     if (time_remaining <= 0) {
@@ -17,7 +17,7 @@ function revealEgg() {
         counter_selector.innerHTML = egg_count;
     }
     if (egg_count == 132) {
-        let victory = document.querySelector(".victory");
+        let victory = document.querySelector("#victory");
         victory.innerHTML = "Congrats! You've found all the eggs!";
         clearInterval(timer)
     }
@@ -27,6 +27,9 @@ function tick() {
     if (time_remaining > 0) {
         time_remaining -= 1;
         timer_selector.innerHTML = time_remaining;
+    }
+    if (time_remaining <= 30) {
+        document.querySelector("#timer").classList.add("red");
     }
 }
 
