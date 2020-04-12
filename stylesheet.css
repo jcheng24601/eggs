@@ -40,10 +40,15 @@ button {
 	font-size: 18pt;
 }
 
+.smaller-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 10px 30px;
+}
 .smaller-font {
 	font-size: 1em;
-	transition: 0.2s;
-	margin: 1px;
+	margin: 5px;
 	padding: 0;
 }
 

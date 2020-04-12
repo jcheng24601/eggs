@@ -6,6 +6,7 @@ let timer = null;
 // Selectors.
 const counter_selector = document.querySelector("#counter span");
 const timer_selector = document.querySelector("#timer span");
+const header_selector = document.querySelector(".header");
 const h2_selector = document.querySelectorAll("h2");
 const hint_selector = document.querySelector("#hint");
 const button_selector = document.querySelector("button");
@@ -58,9 +59,11 @@ function displayResults() {
 
 function scrollFunction() {
   if (document.documentElement.scrollTop > 150) {
+    header_selector.classList.add("smaller-header");
     h2_selector.forEach(h => h.classList.add("smaller-font"));
     hint_selector.classList.add("display-none");
   } else if (document.documentElement.scrollTop == 0) {
+    header_selector.classList.remove("smaller-header");
     h2_selector.forEach(h => h.classList.remove("smaller-font"));
     hint_selector.classList.remove("display-none");
   }
