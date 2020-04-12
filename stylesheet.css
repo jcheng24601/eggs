@@ -1,5 +1,9 @@
 * { border: 0; margin: 0; padding: 0; }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-image: url("img/tree.gif");
 	background-repeat: repeat;
@@ -15,8 +19,6 @@ body {
 }
 
 .header { 
-	position: sticky;
-	top: 30px;
 	display: grid;
 	width: 800px;
 	margin: 30px 0;
@@ -25,6 +27,11 @@ body {
 	border-radius: 10px;
 	background-color: rgba(250, 250, 247, .9);
 	transition: 0.2s;
+}
+
+.sticky {
+	position: sticky;
+	top: 30px;
 }
 
 h2 { margin-bottom: 20px; text-align: center; }

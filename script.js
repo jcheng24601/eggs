@@ -1,6 +1,6 @@
 // Variables.
 let egg_count = 0;
-let time_remaining = 300;
+let time_remaining = 5;
 let timer = null;
 
 // Selectors.
@@ -40,6 +40,12 @@ function tick() {
 
 function displayResults() {
     clearInterval(timer);
+    window.onscroll = null;
+    header_selector.classList.remove("sticky", "smaller-header");
+    // header_selector.classList.remove("smaller-header");
+    h2_selector.forEach(h => h.classList.remove("smaller-font"));
+    hint_selector.classList.remove("display-none");
+
     const results_table = document.querySelector("#results");
     results_table.classList.remove("display-none");
     if (egg_count <= 25) {
@@ -55,6 +61,7 @@ function displayResults() {
     } else {
         document.querySelector("#articuno").classList.add("highlight");
     }
+    window.scrollTo(0, 0);
 }
 
 function scrollFunction() {
