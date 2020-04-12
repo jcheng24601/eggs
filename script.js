@@ -8,9 +8,10 @@ const counter_selector = document.querySelector("#counter span");
 const timer_selector = document.querySelector("#timer span");
 const h2_selector = document.querySelectorAll("h2");
 const hint_selector = document.querySelector("#hint");
+const button_selector = document.querySelector("button");
 
 function revealEgg() {
-    if (time_remaining <= 0) {
+    if (timer == null || time_remaining <= 0) {
         return;
     }
     if (this.classList.contains("hidden")) {
@@ -56,10 +57,10 @@ function displayResults() {
 }
 
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.documentElement.scrollTop > 150) {
     h2_selector.forEach(h => h.classList.add("smaller-font"));
     hint_selector.classList.add("display-none");
-  } else if (document.body.scrollTop == 0 || document.documentElement.scrollTop == 0) {
+  } else if (document.documentElement.scrollTop == 0) {
     h2_selector.forEach(h => h.classList.remove("smaller-font"));
     hint_selector.classList.remove("display-none");
   }
@@ -76,6 +77,11 @@ const debounce = (callback, delay = 100) => {
   }
 }
 
+function startTimer() {
+    timer = setInterval(tick, 1000);
+    button_selector.classList.add("display-none");
+}
+
 function main() {
     const container = document.querySelector(".container");
     container.addEventListener("mousedown", function() { this.classList.add("shovel-up"); });
@@ -84,9 +90,9 @@ function main() {
     const eggs = document.querySelectorAll(".egg");
     eggs.forEach(egg => egg.addEventListener("click", revealEgg));
 
-    timer_selector.innerHTML = time_remaining;
-    timer = setInterval(tick, 1000);
+    button_selector.addEventListener("click", startTimer);
 
+    timer_selector.innerHTML = time_remaining;
     window.onscroll = debounce(scrollFunction);
 }
 
